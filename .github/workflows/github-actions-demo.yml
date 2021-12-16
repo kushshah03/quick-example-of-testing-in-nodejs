@@ -5,7 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # Specify your npm / yarn install step
       - name: Set up Node 15
         uses: actions/setup-node@v2
         with:
@@ -16,5 +15,5 @@ jobs:
         with:
           apikey: 98b7e7a7-5dfc-48d0-871f-c67333b42a9b
           project_id: f5861c97-8575-4435-adad-5d0955e4d52c
-      command: npm run test
+          command: npm run test
 
