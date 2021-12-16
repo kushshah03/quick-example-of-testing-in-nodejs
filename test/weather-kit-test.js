@@ -23,7 +23,8 @@ describe('Test the weather kit module\'s basic functionality', function(){
     it('should return true for umbrella test if it is raining',function(){
         expect(helloWeather.doINeed.umbrella(monday)).to.be.a('boolean');
         expect(helloWeather.doINeed.umbrella(tuesday)).equal(false);
-        expect(helloWeather.doINeed.umbrella(wednesday)).equal(false);
+        var random_boolean = Math.random() < 0.5;
+        expect(helloWeather.doINeed.umbrella(wednesday)).equal(random_boolean);
         expect(helloWeather.doINeed.umbrella(friday)).equal(true);
     });
 
